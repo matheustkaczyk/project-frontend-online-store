@@ -6,7 +6,7 @@ export default class ShoppingCart extends React.Component {
     const { itemCart } = this.props;
     return (
       <div>
-        {itemCart.length ? (itemCart.map(({ title, id, quantity, thumbnail }) => (
+        { itemCart.length ? (itemCart.map(({ title, id, quantity, thumbnail }) => (
           <div key={ id }>
             <h3 data-testid="shopping-cart-product-name">{title}</h3>
             <img src={ thumbnail } alt="Imagem do produto" />
