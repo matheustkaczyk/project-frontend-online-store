@@ -1,6 +1,6 @@
 Projeto desenvolvido durante o curso de desenvolvimento de software na Trybe. O objetivo do projeto foi em equipes, desenvolver uma landing page de uma loja, consumindo a API do mercado livre. Teve muito o foco também em botar em prática metodologias ágeis, como o Scrum e o Kanban.
 
-Data de entrega: 
+Data de entrega: 15/07/2021
 
 # Habilidades
 * Entender o que são Métodos Ágeis
