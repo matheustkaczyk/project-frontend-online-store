@@ -66,7 +66,16 @@ class App extends React.Component {
 
     return (
       <BrowserRouter>
-        <Link to="/">Home</Link>
+        <navigator>
+          <Link className="navigator-home" to="/">Home</Link>
+          <Link
+            className="cart-link"
+            data-testid="shopping-cart-button"
+            to="/cart"
+          >
+            Carrinho
+          </Link>
+        </navigator>
         <Switch>
           <Route
             path="/infos/:category/:id/:product"
@@ -76,7 +85,14 @@ class App extends React.Component {
               addToCartItem={ this.addToCartItem }
             />) }
           />
-          <Route path="/cart" render={ () => <Cart itemCart={ itemCart } /> } />
+          <Route
+            path="/cart"
+            render={ () => (
+              <Cart
+                itemCart={ itemCart }
+                addCartItem={ this.addToCartItem }
+              />) }
+          />
           <Route
             path="/"
             render={ () => (<Index

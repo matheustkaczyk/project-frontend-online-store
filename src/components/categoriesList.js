@@ -34,6 +34,7 @@ class Categories extends React.Component {
         {
           categories.map((item) => (
             <button
+              className="categories-btn"
               type="button"
               data-testid="category"
               key={ item }

@@ -46,8 +46,11 @@ export default class Card extends Component {
           role="presentation"
           onClick={ () => this.itemClicked(id, title, categoryId) }
         >
-          <h4 data-testid="product-detail-link">{ title }</h4>
-          <p>{ price }</p>
+          <h4 className="product-title" data-testid="product-detail-link">{ title }</h4>
+          <p>
+            R$
+            { price }
+          </p>
           <img className="thumbnail" src={ thumbnail } alt={ title } />
           { shipping.free_shipping && <img data-testid="free-shipping" src="https://cdn.awsli.com.br/511/511886/arquivos/frete-gratis-1.png" alt="Frete Gratis" width="100px" /> }
         </div>
